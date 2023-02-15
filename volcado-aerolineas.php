@@ -4,7 +4,7 @@ include "db.php";
 
 $key = 'd410a7d9-7524-4343-9a3e-586e4c694c2b';
 
-$consultaVuelos = "https://airlabs.co/api/v9/airports?country_code=ES&api_key=$key";
+$consultaVuelos = "https://airlabs.co/api/v9/airlines?country_code=ES&api_key=$key";
 
 $json = file_get_contents($consultaVuelos);
 
@@ -17,8 +17,8 @@ $datos = $datos["response"];
     if(isset($datos[$i]["iata_code"])){
         $nombre = $datos[$i]["name"];
         $iata = $datos[$i]["iata_code"];
-        $consulta = "INSERT INTO aeropuerto (nombre,iata) VALUES ('$nombre', '$iata')";
-        $res = $db->query($consulta); 
+        $consulta = "INSERT INTO aerolinea (nombre,iata) VALUES ('$nombre', '$iata')";
+        $res = $db->query($consulta);
         echo $nombre;
     }
 };   
