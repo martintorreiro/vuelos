@@ -14,7 +14,9 @@ $datos = $datos["response"];
 
 
    for($i=0; $i<count($datos); $i++){
+    
     if(isset($datos[$i]["iata_code"])){
+
         $nombre = $datos[$i]["name"];
         $iata = $datos[$i]["iata_code"];
         $consulta = "INSERT INTO aeropuerto (nombre,iata) VALUES ('$nombre', '$iata')";

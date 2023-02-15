@@ -14,3 +14,22 @@
 </head>
 
 <body>
+
+    <header class="w-960 centrado flex jc-sb">
+        <div class="">
+            <img src='css/images/logo.png'>
+
+        </div>
+
+        <nav class="m-100 flex m-jcc">
+            <div class="centrado flex m-jcsb m-aic">
+                <ul class="flex m-jcfs m-aic">
+                    <li class="marg-r-20"><a href="index.php">Inicio</a></li>
+                    <li class="marg-r-20"><a href="listar-aeropuertos.php">Aeropuertos</a></li>
+                    <li class="marg-r-20"><a href="listar-aerolineas.php">Aerolineas</a></li>
+                    <li class="marg-r-20"><a href="listar-vuelos.php">Vuelos</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>

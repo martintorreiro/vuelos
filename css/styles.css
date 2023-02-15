@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -116,7 +118,7 @@ button:hover {
   text-transform: uppercase;
 }
 
-/* ---------------------------------------------------- */
+/* ------------------------TABLAS---------------------------- */
 
 table,
 th,
@@ -128,4 +130,77 @@ td {
 th,
 td {
   border: 1px solid black;
+}
+
+/* -------------------FORMULARIO ----------------- */
+
+.formulario_estandar {
+  border: 0.5px solid rgb(192, 192, 192);
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 600px;
+}
+.formulario_estandar .cabecera {
+  padding: 12px 20px;
+  background-color: #007bff;
+}
+
+.formulario_estandar .cabecera h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.formulario_estandar .form_body {
+  width: 100%;
+  padding: 20px;
+}
+
+.formulario_estandar .form_group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario_estandar .form_group label {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.formulario_estandar .form_group input[type="text"],
+.formulario_estandar .form_group select,
+.formulario_estandar .form_group input[type="time"] {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 192, 192);
+  background-color: white;
+}
+
+.formulario_estandar .form_group input[type="text"]:focus,
+.formulario_estandar .form_group select:focus,
+.formulario_estandar .form_group input[type="time"]:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+.formulario_estandar .controls {
+  padding: 20px;
+}
+
+.formulario_estandar .controls button {
+  font-size: 16px;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  background-color: #007bff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.formulario_estandar .controls button[id="cancelar"] {
+  background-color: #dc3545;
+}
+
+.formulario_estandar .controls button:hover {
+  opacity: 0.85;
 }
